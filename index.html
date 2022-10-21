@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contas do mês</title>
+  <style>
+     img {
+      height: 300px;
+      width: 300px;
+      float: left;
+      margin-right: 5%;
+    }
+    h1 {
+      border-bottom-style: inset;
+    }
+    input#btRegistrar {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <img src="contas.png" alt="Contas">
+  <h1>Contas do mês</h1>
+  <p>Descrição da conta:
+    <input type="text" id="inDescricao">
+  </p>
+  <p>Valor a pagar R$:
+    <input type="text" id="inValor">
+  </p>
+  <input type="button" value="Registrar Conta" id="btRegistrar">
+  <pre id="outListaContas"></pre>
+  <pre id="outTotal"></pre>
+  <script src="script.js"></script>
+</body>
+</html>
