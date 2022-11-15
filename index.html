@@ -12,6 +12,12 @@
       float: left;
       margin-right: 5%;
     }
+    .box {
+      float: left;
+      margin-left: 20px;
+      min-height: 400px;
+      width: 50%;
+    }
     h1 {
       border-bottom-style: inset;
     }
@@ -22,16 +28,18 @@
 </head>
 <body>
   <img src="contas.png" alt="Contas">
-  <h1>Contas do mês</h1>
-  <p>Descrição da conta:
-    <input type="text" id="inDescricao">
-  </p>
-  <p>Valor a pagar R$:
-    <input type="text" id="inValor">
-  </p>
-  <input type="button" value="Registrar Conta" id="btRegistrar">
-  <pre id="outListaContas"></pre>
-  <pre id="outTotal"></pre>
+  <div class="box">
+    <h1>Contas do mês</h1>
+    <p>Descrição da conta:
+      <input type="text" id="inDescricao">
+    </p>
+    <p>Valor a pagar R$:
+      <input type="text" id="inValor">
+    </p>
+    <input type="button" value="Registrar Conta" id="btRegistrar">
+    <pre id="outListaContas"></pre>
+    <pre id="outTotal"></pre>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
